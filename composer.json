@@ -1,0 +1,22 @@
+{
+    "name": "jonahe/cflash",    
+    "type": "library",
+    "description": "small PHP module for sending/getting flash messages",
+    "keywords": ["messages", "module", "framework", "mvc", "micro", "education"],
+    "homepage": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erik Wiberg",
+            "email": "erik.wiberg.87@gmail.com",
+            "homepage": "",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": { "Mos\\": "src/" }
+    }
+}
