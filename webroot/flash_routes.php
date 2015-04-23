@@ -1,6 +1,32 @@
 <?php
 
-$app->router->add('flash', function() use ($app) {
+/**
+ * Config file for pagecontrollers, creating an instance of $app.
+ *
+ */
+
+// Get environment & autoloader.
+require __DIR__.'/config.php'; 
+
+// Create services and inject into the app. 
+
+// dependency injector factory
+$di  = new \Anax\DI\CDIFactoryDefault;
+
+
+// create application
+$app = new \Anax\MVC\CApplicationBasic($di);
+
+
+// setup service for flashMessages
+
+$di->set('flashMessages', function() use ($di) {
+     $flashMessages = new Anax\Flash\CFlashAnax();
+     $flashMessages->setDI($di);
+     return $flashMessages;
+}); 
+
+$app->router->add('', function() use ($app) {
                 
    $app->theme->setTitle("Flash");
    
