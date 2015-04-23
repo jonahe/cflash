@@ -29,15 +29,10 @@ $di->set('flashMessages', function() use ($di) {
                 
    $app->theme->setTitle("Flash-redirect");
    
-  
-    //Make a full HTTP redirection to new page/route -- see below
-    //$app->response->redirect("flash-redirect");
-    
-    
-    
    // get messages from session in HTML format. ready to use in a view.
    $messages = $app->flashMessages->getMessage();
-    
+   
+   // add view to show messages in. (using a default template that has a variable $content)
        $app->views->add('default/article', [
         'content' => $messages,   
     ]);
