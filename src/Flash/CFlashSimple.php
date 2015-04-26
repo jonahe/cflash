@@ -51,7 +51,9 @@ class CFlashSimple
         
         // abort if $flag is invalid
         if(!array_key_exists($type, $this->class)){
-                        die("'$type' is not a valid message type");
+                
+                throw new \Exception("'$type' is not a valid message type");
+                        //die("'$type' is not a valid message type");
         }
         
         // make array with message and type
