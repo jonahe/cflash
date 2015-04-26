@@ -26,3 +26,4 @@ Exampel code of this approach is found in cflash_simple.php
 
 
 
+[![Build Status](https://travis-ci.org/jonahe/cflash.svg?branch=master)](https://travis-ci.org/jonahe/cflash)
