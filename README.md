@@ -26,7 +26,6 @@ Exampel code of this approach is found in cflash_simple.php
 
 
 
-[![Build Status](https://travis-ci.org/jonahe/cflash.svg?branch=master)](https://travis-ci.org/jonahe/cflash)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jonahe/cflash/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jonahe/cflash/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/jonahe/cflash/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/jonahe/cflash/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/jonahe/cflash/badges/build.png?b=master)](https://scrutinizer-ci.com/g/jonahe/cflash/build-status/master)
